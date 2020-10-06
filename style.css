@@ -1,0 +1,135 @@
+body{
+    background-color: rgb(58, 58, 58);
+    padding: 0px;
+    margin: 0;
+}
+main{
+    margin-top: 10px;
+    width: 280px;
+    height: 410px;
+    background-color: rgb(228, 228, 228);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+}
+
+h4{ 
+    display: inline-block;
+    padding-top: 14px;
+    padding-right: 100px;
+    margin-left: 20px;
+    font-size: 0.8em;
+    font-weight: lighter;
+    color: rgb(95, 92, 92);
+}
+.historico{
+    display: inline-block;
+    margin-left: auto;
+    transform: scale(0.5);
+    margin-bottom: 0;
+    width: 80px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(58, 58, 58);
+    cursor: pointer;
+}
+.visor{
+    background-color: rgb(222, 228, 228);
+    color: rgb(110, 104, 104);
+    width: 250px;
+    height: 120px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.7em;
+    text-align: right;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    color: black;
+    display: inline-block;
+    background-color: white;
+    font-weight: normal;
+    font-size: 1.1em;
+    width: 65px;
+    height: 49px;
+    border: none;
+    margin-left: 2px;
+    margin-bottom: 3px;
+}
+button:nth-child(1), button:nth-child(5), button:nth-child(9), button:nth-child(13){
+    margin-left: 0;
+}
+button:nth-child(4n){
+    background-color: rgba(214, 210, 210, 0.452);
+    color: rgb(95, 92, 92);
+}
+button:nth-child(15){
+    background-color: rgb(163, 162, 162);
+}
+button:focus, .visor:focus{
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-color: none;
+    outline-style: none;
+    outline-width: 0px;
+}
+.visor:active{
+    border: none;
+}
+
+/*modal*/
+.modal{
+    background-color:white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    visibility: hidden;
+}
+.modal h5{
+    padding: 0;
+    margin-top: 12px;
+    margin-left: 8px;
+    font-weight: lighter;
+    color: rgb(95, 92, 92);
+    font-size: 0.8em;
+
+}
+.modal.active{
+    visibility: visible;
+}
+.close-modal{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.espacamento-modal{
+    max-height: 350px;
+    margin-top: 20px;
+    overflow:auto; 
+}
+.modal.active p{
+    text-align: right;
+    font-size: 1.1em;
+    color: rgb(110, 104, 104);
+    margin-right: 16px;
+    margin-bottom: 0px;
+}
+.modal.active .resultado{
+    margin-top: 0px;
+    color: black;
+    margin-right: 16px;
+    font-size: 1.7em;
+}
+.cada_operacao:hover{
+    background-color: rgb(222, 228, 228);
+}
